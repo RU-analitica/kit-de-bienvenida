@@ -1,0 +1,53 @@
+@mixin container{
+    width: 100%;
+    height: 100%;
+}
+@mixin flex-col{
+    display: flex;
+    flex-direction: column;
+}
+@mixin flex-col-reverse{
+    display: flex;
+    flex-direction: column-reverse;
+}
+@mixin flex-row{
+    display: flex;
+    flex-direction: row;
+}
+@mixin flex-row-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
+@mixin flex-center{
+    justify-content: center;
+    align-items: center;
+}
+@mixin grid-center{
+    display: grid;
+    place-items: center;
+}
+@mixin breakpoint-md{
+    @media screen and (min-width: $bp-md){
+        @content;
+    }
+}
+@mixin breakpoint-lg{
+    @media screen and (min-width: $bp-lg){
+        @content;
+    }
+}
+@mixin breakpoint-tab{
+    @media screen and (min-width: $bp-tab){
+        @content;
+    }
+}
+@mixin breakpoint-tab-lg{
+    @media screen and (min-width: $bp-tab-lg){
+        @content;
+    }
+}
+@mixin breakpoint-laptop{
+    @media screen and (min-width: $bp-laptop){
+        @content;
+    }
+}

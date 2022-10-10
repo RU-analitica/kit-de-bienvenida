@@ -1,0 +1,54 @@
+@import "assets/scss/main.scss";
+.navbar{
+    @include container;
+    @include flex-col;
+    padding: 1rem 0;
+    &-link{
+        width: 27rem;
+        border-radius: .4rem;
+        padding: .5rem 0;
+        color: #ffffff;
+        font-weight: 700;
+        margin: .5rem auto;
+        @include flex-row;
+        @include flex-center;
+        &:nth-child(1){
+            background: #448C72;
+        }
+        &:nth-child(2){
+            background: #D49748;
+        }
+        & svg{
+            font-size: 2rem;
+            margin-right: .5rem;
+        }
+    }
+}
+@include breakpoint-md{
+    .navbar{
+        &-link{
+            width: 29rem;
+        }
+    }
+}
+@include breakpoint-lg{
+    .navbar{
+        &-link{
+            width: 32rem;
+        }
+    }
+}
+@include breakpoint-tab{
+    .navbar{
+        @include flex-row;
+        @include flex-center;
+        &-link{
+            margin: 0 .8rem;
+            width: 32rem;
+        }
+    }
+}
+
+.break{
+    display: none;
+}

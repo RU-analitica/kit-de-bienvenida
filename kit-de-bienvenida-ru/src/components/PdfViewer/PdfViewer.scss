@@ -1,0 +1,14 @@
+.pdf {
+    width: 100%;
+    height: 100%;
+    &-doc{
+        width: 100%;
+    }
+    &-page{
+        & canvas{
+            margin: 0 auto;
+            width: 310px !important;
+            height: 100% !important;
+        }
+    }
+}

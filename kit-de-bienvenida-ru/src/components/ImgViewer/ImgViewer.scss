@@ -1,0 +1,44 @@
+@import "assets/scss/main.scss";
+.img-viewer{
+    @include container;
+    @include flex-col;
+    @include flex-center;
+    & img{
+        width: 32rem;
+    }
+}
+@include breakpoint-md{
+    .img-viewer{
+        & img{
+            width: 37.5rem;
+        }
+    }
+}
+@include breakpoint-lg{
+    .img-viewer{
+        & img{
+            width: 42.5rem;
+        }
+    }
+}
+@include breakpoint-tab{
+    .img-viewer{
+        & img{
+            width: 76.8rem;
+        }
+    }
+}
+@include breakpoint-tab-lg{
+    .img-viewer{
+        & img{
+            width: 102.4rem;
+        }
+    }
+}
+@include breakpoint-laptop{
+    .img-viewer{
+        & img{
+            width: 127.9rem;
+        }
+    }
+}
